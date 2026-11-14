@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/Metron-Analytics/file-server/discussions
+    about: Ask how something works, share a setup, or suggest something new.
+  - name: Security problem
+    url: https://github.com/Metron-Analytics/file-server/blob/main/SECURITY.md
+    about: Please don't report security problems in public. E-mail us instead.
+  - name: My account or documents
+    url: https://file.metron-apps.eu/support/
+    about: Sign-in, passwords and missing documents are handled by the administrator of your server.

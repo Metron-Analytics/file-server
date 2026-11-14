@@ -1,0 +1,59 @@
+name: Bug report
+description: Something in the server, the website or the app doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This is public.** Never post documents, screenshots of real documents, passwords, server addresses or names of people. Use invented examples, and black out anything personal in screenshots.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a folder
+        2. Tap + > Choose PDF
+        3. ...
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      multiple: true
+      options:
+        - iPhone app
+        - Website (browser)
+        - Server (install, update, import, logs)
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Server release
+      description: On the Account screen ("Server 1.0 (8)"), or IMAGE_TAG in .env.
+      placeholder: "1.0.8"
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: App version and iOS
+      placeholder: "1.0 (8), iOS 26.2"
+  - type: input
+    id: host
+    attributes:
+      label: Host
+      description: Where the server runs, and the profile.
+      placeholder: "Synology DS918+, DSM 7.2, lan profile"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines
+      description: "From `docker compose logs api worker`. Check them for document titles, names and addresses first, and remove those."
+      render: text

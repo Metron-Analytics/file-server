@@ -1,0 +1,29 @@
+name: Feature request
+description: A concrete change you'd like. For open-ended ideas, start a discussion instead.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This is public.** Use invented examples, never real documents or personal details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: The situation, and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: How you imagine it working, in the app, on the website or on the server.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      multiple: true
+      options:
+        - iPhone app
+        - Website (browser)
+        - Server
